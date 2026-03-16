@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ThemeToggleButton from "../Buttons/ThemeToggleButton";
+import DesktopNav from "./DesktopNav";
 
 const Header = () => {
   return (
@@ -11,14 +11,14 @@ const Header = () => {
           <h1
             className="text-2xl font-semibold"
             aria-label="App Name">
-            NSF App
+            NextHire
           </h1>
         </Link>
 
-        <nav className="flex items-center gap-4">
-          <Link href={"/"}>Home</Link>
-
-          <ThemeToggleButton />
+        <nav
+          className="hidden md:flex md:items-center md:gap-4"
+          aria-label="Nav-Items">
+          <DesktopNav />
         </nav>
       </div>
     </header>

@@ -1,7 +1,13 @@
+import Hero from "@/components/Landing/FindJob/Hero";
+import { LightRays } from "@/components/shadcnui/light-rays";
+
 const page = () => {
   return (
     <section className="grid h-dvh place-items-center">
-      Home for Job Seekers
+      
+      <LightRays color="rgba(160, 210, 255, 0.6)" length="90vh"/>
+    
+      <Hero/>
     </section>
   );
 };

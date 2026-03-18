@@ -1,25 +1,59 @@
 import { Button } from "@/components/shadcnui/button";
+import { BriefcaseBusinessIcon, ChevronRightIcon } from "lucide-react";
 import Link from "next/link";
 
 const Hero = () => {
-    return (
-        <section className="flex flex-col items-center gap-4 p-8 text-center">
-        <div className="text-4xl md:text-6xl font-bold text-blue-900 ">Where Talent Meets Opportunity</div> 
-        <div className="text-xl md:text-3xl font-light ">Explore opportunities, showcase your skills, and get hired faster
-            </div> 
-           
+  return (
+    <section className="space-y-4 text-center">
+      <div className="mx-auto flex w-3xs cursor-pointer justify-center gap-4 rounded-full border border-black/24 bg-white/2 py-1.5 hover:bg-white/3 dark:border-white/24">
+        <BriefcaseBusinessIcon /> <span>|</span> For Job Seekers{" "}
+        <ChevronRightIcon />
+      </div>
 
+      {/* main heading  */}
+      <h1 className="text-2xl font-bold md:text-4xl lg:text-6xl">
+        Where <span className="text-blue-600 dark:text-blue-500">Talent</span>{" "}
+        Meets{" "}
+        <span className="text-blue-600 dark:text-blue-500">Opportunity</span>
+      </h1>
 
+      {/* sub heading  */}
+      <h2 className="text-lg font-light md:text-2xl">
+        Explore opportunities, showcase your{" "}
+        <span className="font-semibold text-blue-600 dark:text-blue-500">
+          Skills
+        </span>{" "}
+        , and get{" "}
+        <span className="font-semibold text-blue-600 dark:text-blue-500">
+          Hired
+        </span>{" "}
+        faster
+      </h2>
 
-                <Link href="/auth/signup">
-                        <Button
-                          variant="outline"
-                          className="bg-blue-700  hover:bg-blue-300 dark:bg-white dark:text-black dark:hover:bg-blue-200 w-44 cursor-pointer  text-white">
-                          Get Hired
-                        </Button>
-                      </Link>
-        </section>
-    );
-}
+      {/* paragraph visible tab  */}
+      <p className="hidden text-balance text-black/75 md:block dark:text-white/75">
+        Where talent meets opportunity—explore a wide range of roles tailored to
+        your skills, showcase your strengths to the right employers, and
+        accelerate your journey toward getting hired faster with confidence and
+        ease
+      </p>
+
+      {/* paragraph for mobile  */}
+      <p className="block text-black/75 md:hidden dark:text-white/75">
+        Where talent meets opportunity discover roles that match your skills,
+        showcase your potential, and get hired faster with confidence.
+      </p>
+
+      {/* call to action button  */}
+      <Link href="/auth/signup">
+        <Button
+          variant="outline"
+          className="w-44 cursor-pointer bg-blue-700 text-white hover:bg-blue-300 dark:bg-white dark:text-black dark:hover:bg-blue-200">
+          Get Hired
+        </Button>
+      </Link>
+    </section>
+  );
+};
 
 export default Hero;

@@ -9,7 +9,7 @@ const Header = () => {
   const path = usePathname();
   return (
     <header
-      className={`fixed top-0 right-0 left-0 z-50 ${path === "/auth/signup" || path === "/auth/signin" ? "backdrop-blur-md" : "border-b shadow"}`}
+      className={`fixed top-0 right-0 left-0 z-50 ${path === "/auth/signup" || path === "/auth/signin" ? "backdrop-blur-md" : "border-b shadow backdrop-blur-lg"}`}
       aria-label="app-header">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
         {/* Logo  */}

@@ -1,6 +1,13 @@
+import { LucideIcon } from "lucide-react";
 import { ReactNode } from "react";
 
 export type CustomLayoutProps = Readonly<{
-  children: ReactNode
-  ;
+  children: ReactNode;
 }>;
+
+export type AdvantageCardType = {
+  id: number;
+  icon: LucideIcon;
+  heading: string;
+  description: string;
+};

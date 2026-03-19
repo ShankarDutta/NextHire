@@ -1,5 +1,8 @@
-import { Button } from "@/components/shadcnui/button";
-import { BriefcaseBusinessIcon, ChevronRightIcon } from "lucide-react";
+import {
+  BriefcaseBusinessIcon,
+  ChevronRightIcon,
+  MoveRightIcon,
+} from "lucide-react";
 import Link from "next/link";
 
 const Hero = () => {
@@ -48,11 +51,12 @@ const Hero = () => {
 
       {/* call to action button  */}
       <Link href="/auth/signup">
-        <Button
-          variant="outline"
-          className="w-44 cursor-pointer bg-blue-700 text-white hover:bg-blue-300 dark:bg-white dark:text-black dark:hover:bg-blue-200">
+        <button
+          type="button"
+          className="mx-auto flex items-center gap-2 rounded-xl bg-blue-600 px-12 py-2.5 text-[16px] text-white hover:bg-blue-800 hover:text-white dark:bg-blue-600 dark:hover:bg-blue-700">
           Get Hired
-        </Button>
+          <MoveRightIcon />
+        </button>
       </Link>
     </section>
   );

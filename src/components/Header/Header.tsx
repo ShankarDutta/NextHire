@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import AuthNav from "./AuthNav";
@@ -13,12 +14,16 @@ const Header = () => {
       aria-label="app-header">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
         {/* Logo  */}
-        <Link href={"/"}>
-          <h1
-            className="text-2xl font-semibold"
-            aria-label="App Name">
-            NextHire
-          </h1>
+        <Link
+          href={"/"}
+          aria-label="Next-Hire-Logo">
+          <Image
+            src={"/app-logo.png"}
+            alt="NextHire-Logo"
+            height={100}
+            width={100}
+            className="h-10 w-full"
+          />
         </Link>
 
         {/* swith nav Items  */}

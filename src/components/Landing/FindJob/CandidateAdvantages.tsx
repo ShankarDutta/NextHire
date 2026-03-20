@@ -6,6 +6,7 @@ import {
   CardTitle,
 } from "@/components/shadcnui/card";
 import { AdvantageCardType } from "@/lib/type";
+
 type CandidateAdvantagesProps = {
   info: AdvantageCardType;
 };

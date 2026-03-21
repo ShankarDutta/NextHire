@@ -34,27 +34,63 @@ const LandingFooter = () => {
 
             {/* Links */}
             <div className="grid grid-cols-1 gap-2">
-              <h4 className="text-lg font-semibold">Quick Links</h4>
-              <Link href="/">Job Seekers</Link>
-              <Link href="/post-jobs">Recruiter</Link>
-              <Link href="/auth/signin">Signin & Get Hired</Link>
-              <Link href="/auth/signup">Create Free Account</Link>
+              <h4 className="text-2xl font-semibold">Quick Links</h4>
+              <Link
+                href="/"
+                className="hover:text-blue-600 dark:hover:text-blue-400">
+                Job Seekers
+              </Link>
+              <Link
+                href="/post-jobs"
+                className="hover:text-blue-600 dark:hover:text-blue-400">
+                Recruiter
+              </Link>
+              <Link
+                href="/auth/signin"
+                className="hover:text-blue-600 dark:hover:text-blue-400">
+                Signin & Get Hired
+              </Link>
+              <Link
+                href="/auth/signup"
+                className="hover:text-blue-600 dark:hover:text-blue-400">
+                Create Free Account
+              </Link>
             </div>
 
             <div className="space-y-2">
-              <h4 className="text-lg font-semibold">Why NextHire</h4>
+              <h4 className="text-2xl font-semibold">Why NextHire</h4>
               <div className="mt-1.5 grid grid-cols-1 gap-2">
-                <Link href="/">Job Seeker Features</Link>
-                <Link href="/post-jobs">Recruiter Features</Link>
-                <Link href="/auth/signin">Our Network</Link>
+                <Link
+                  href="/"
+                  className="hover:text-blue-600 dark:hover:text-blue-400">
+                  Job Seeker Features
+                </Link>
+                <Link
+                  href="/post-jobs"
+                  className="hover:text-blue-600 dark:hover:text-blue-400">
+                  Recruiter Features
+                </Link>
+                <Link
+                  href="/auth/signin"
+                  className="hover:text-blue-600 dark:hover:text-blue-400">
+                  Our Network
+                </Link>
               </div>
             </div>
 
             <div className="space-y-2">
-              <h4 className="text-lg font-semibold">Resources</h4>
+              <h4 className="text-2xl font-semibold">Resources</h4>
               <div className="mt-1.5 grid grid-cols-1 gap-2">
-                <Link href="/">Help Center</Link>
-                <Link href="/post-jobs">About NextHire</Link>
+                <Link
+                  href="/"
+                  className="hover:text-blue-600 dark:hover:text-blue-400">
+                  Help Center
+                </Link>
+                <Link
+                  href="/post-jobs"
+                  className="hover:text-blue-600 dark:hover:text-blue-400">
+                  About NextHire
+                </Link>
               </div>
             </div>
 
@@ -67,9 +103,21 @@ const LandingFooter = () => {
               <h4>© 2026 NextHire | All Rights Reserved</h4>
 
               <div className="flex flex-wrap justify-center gap-4 sm:justify-end">
-                <Link href="/">Privacy Policy</Link>
-                <Link href="/post-jobs">Terms & Condition</Link>
-                <Link href="/post-jobs">Terms & Service</Link>
+                <Link
+                  href="/"
+                  className="hover:text-blue-600 dark:hover:text-blue-400">
+                  Privacy Policy
+                </Link>
+                <Link
+                  href="/post-jobs"
+                  className="hover:text-blue-600 dark:hover:text-blue-400">
+                  Terms & Condition
+                </Link>
+                <Link
+                  href="/post-jobs"
+                  className="hover:text-blue-600 dark:hover:text-blue-400">
+                  Terms & Service
+                </Link>
               </div>
             </div>
           </section>
